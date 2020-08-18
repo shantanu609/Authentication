@@ -1,6 +1,6 @@
 # To-Do-App
 
-<h3>Things I code with</h3>
+<h3>This application was done using</h3>
 <p>
   <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
   <img alt = "Javascript" src = "https://img.shields.io/badge/Javascript-ES6-yellow"/>
