@@ -24,6 +24,18 @@
 
 ## Checklist of implemented operations
 - [x] Create a Node app with Express
-- [ ] Basic HTML5/CSS3/Boostrap design 
+- [x] Basic HTML5/CSS3/Boostrap design 
+- [x] Use EJS to to optimize the reuse of basic HTML content like header and Footer
+- [x] Deploy on Heroku or localhost 3000. 
+- [x] Setup the Database with MongoDB Atlas, by creating Cluster and connecting with application. 
+- [x] Implemented Create list operation for default.
+- [x] Implemented Insert list operation 
+- [x] Implemented Update list operation
+- [x] Implemented Delete and Update list operation. 
+- [x] Implemented URL routes handle for separaet list session and a separate Mongo Collection for each URL extension.
+
+## 
+## Snapshot 
+##
 
 ![Image](https://github.com/shantanu609/To-Do-App/blob/master/Screen%20Shot%202020-08-17%20at%205.08.34%20PM.png)
