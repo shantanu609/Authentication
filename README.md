@@ -18,4 +18,9 @@
 - 🔭 A To-Do list app. Capable of handling CRUD operations
 - 🌱 Deployed on Heroku and Database mainatained on MongoDB Atlas.
 
+## Install all basic NPM libraries. 
+
+``` npm insall ```
+
+
 ![Image](https://github.com/shantanu609/To-Do-App/blob/master/Screen%20Shot%202020-08-17%20at%205.08.34%20PM.png)
