@@ -24,6 +24,6 @@
 
 ## Checklist of implemented operations
 - [x] Create a Node app with Express
-- [] Basic HTML5/CSS3/Boostrap design 
+- [ ] Basic HTML5/CSS3/Boostrap design 
 
 ![Image](https://github.com/shantanu609/To-Do-App/blob/master/Screen%20Shot%202020-08-17%20at%205.08.34%20PM.png)
