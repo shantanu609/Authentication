@@ -1,0 +1,20 @@
+<%- include('partials/header') %> 
+<p> <%= homeContent %> </p>
+
+<% nums.forEach(function(element){ %>
+    <div>
+        <h2> <%= element.title %> </h2>
+        <% let content = element.body;  %> 
+        <% let trim ; %>  
+        <% if (content.length > 50){ %> 
+             
+            <p> <%=content.substring(0, 100) + '... ' ; %><a href="/posts/<%= element._id %>"> Read More</a> </p>
+            <% }else{ %> 
+            <p> <%= element.body %> </p>
+    <% } %> 
+    </div>
+<% }); %> 
+
+
+
+<%- include('partials/footer') %> 
