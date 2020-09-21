@@ -5,16 +5,21 @@ const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
+const encrypt = require('mongoose-encryption');
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // connect to the database;
 mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true, useUnifiedTopology: true });
 
-const userSchema = {
+const userSchema = new mongoose.Schema({
     email: String, 
     password : String
-};
+});
+
+const secretKey = "this is a speical encrypted message";
+
+userSchema.plugin(encrypt, {secret : secretKey, encryptedFields: ["password"]});
 
 const userModel = new mongoose.model('User', userSchema);
 
@@ -62,8 +67,10 @@ app.post('/login', function(req, res){
         if(err){
             console.log(err);
         }else{
-            if (foundUser.password === password){
+            if (foundUser != null && foundUser.password === password){
                 res.render('secrets');
+            }else{
+                res.render('login');
             }
         }
     });
