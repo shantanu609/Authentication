@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trial</title>
+<style>
+#myDIV{
+    display: none;
+}
+
+</style>
+</head>
+<body>
+
+<button onclick="myFunction()">Click Me</button>
+
+<div id="myDIV">
+    This is my DIV element.
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+<div class="row">
+    <!--/ Section: Experiences - CAIS /-->
+    <div class="col-md-6">
+        <div class="service-box" style="height:wrap">
+            <a href = "https://www.cais.usc.edu/" target = "_blank">
+                <div class="service-ico col-centered">
+                    <img src="img/cais.png" class="" alt="" style=" width: 30%; height: 150px">
+                </div></a>
+            <div class="service-content" onclick="display('CAIS')">
+                <h2 class="s-title">Center for Artificial Intelligence (CAIS)</h2>
+                <hr>
+                <p class="s-description text-center">
+                    Student Researcher
+                </p>
+                <p class="s-description text-center">
+                    October 2018 - April 2019
+                <hr>
+                </p>
+            </div>
+
+            <div id="CAIS">
+                <p class="s-description">
+                    <i>
+                        <li>Project aimed at <b>detecting poaching activities and animals</b> in forests of South Africa using deep learning techniques on thermal infrared video feeds from drones.</li>
+                        <li>Worked on <b>deployment</b> of trained Tensorflow models on edge computing device <b>(Intel Movidius Stick)</b> for
+                            inference purpose on site.</li>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--/ Section: Experiences - CAIS ends /-->
+    <!--/ Section: Experiences - Veloce /-->
+    <div class="col-md-6">
+        <div class="service-box" style="height:wrap">
+            <a href = "https://www.facebook.com/TeamVeloce/" target="_blank">
+                <div class="service-ico col-centered">
+                    <img src="img/vr.png" class="" alt="" style=" width: 30%; height: 150px">
+                </div></a>
+
+            <div class="service-content" onclick="display('Veloce')">
+                <h2 class="s-title">Team Veloce Racing</h2>
+                <hr>
+                <p class="s-description text-center">
+                    Field Engineer - Formula 1 Vehicle
+                </p>
+                <p class="s-description text-center">
+                    June 2016 - July 2017
+                <hr>
+                </p>
+            </div>
+        </div>
+
+        <div id="Veloce">
+            <p class="s-description">
+                <i>
+                    <li><b>Co-led a team of 30</b> individuals in building a counterpart of a Formula 1 vehicle.</li>
+                    <li><b>Raised over 5000$ in sponsorship</b> by pitching organization’s initiative in front of potential MNCs.</li>
+                    <li>Worked in the engine and electronics department, <b>improved acceleration response of engine</b> (Yamaha R6) by analysis, parameter tuning, and ECU based engine mapping using various sensors: temperature, humidity, throttle body, etc. (Acceleration 75m in 4.8 seconds).</li>
+                </i>
+            </p>
+        </div>
+    </div>
+    <!--/ Section: Experiences - Veloce ends /-->
+</div>
+<!--/ row ends /-->
